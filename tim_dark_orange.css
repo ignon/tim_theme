@@ -1,0 +1,438 @@
+
+/*
+Free to use background image from Toptal, Subtlepatterns:
+https://www.toptal.com/designers/subtlepatterns/prism/
+*/
+
+body {
+    background-image: url(https://igno.cc/omat/prism.png);
+    background-repeat: repeat;
+    background-size: 600px;
+    background-color: #1c1c1c;
+    color: rgb(200,200,200);
+}
+
+
+
+.panel-heading {
+    color: orange !important;
+}
+
+.btn, .tim-button, .timButton {
+    background-color: transparent;
+    color: rgb(200,200,200);
+    border: none;
+}
+
+.timButton:hover {
+    background-color: lightgray;
+}
+
+a, a:hover, a:active, a:visited {
+   all:unset;
+   color: darkorange;
+}
+
+  
+
+a.a1, a.a2, a.a3 {color:  rgb(200,200,200) !important;}
+a.a1:visited, a.a2:visited, a.a3:visited { color: white; }
+
+
+
+ .material {
+    background-color: transparent;
+}
+
+#pars, .panel, .notes {
+    background-color: rgb(40, 40, 40);
+    border-color: #956307;
+    border-width: 2px;
+}
+.panel-default > .panel-heading {
+    background-color: #1c1c1c;
+}
+
+.panel-default {
+    border: none;
+}
+
+.siteheader {
+    border: none;
+}
+
+#menuTabs {
+    background-color: #1c1c1c;
+    border-radius: 5px;
+}
+
+.glyphicon{
+    color: white;
+}
+
+
+.tim-view {
+    min-width: 100em;
+}
+/* Otsikot */
+.paragraphs .parContent h1, .paragraphs .parContent div h1,
+.paragraphs .parContent h2, .paragraphs .parContent div h2,
+.paragraphs .parContent h3, .paragraphs .parContent div h3,
+.paragraphs .parContent h4, .paragraphs .parContent div h4,
+.paragraphs .parContent h5, .paragraphs .parContent div h5,
+.paragraphs .parContent h6, .paragraphs .parContent div h6
+{
+ color: darkorange;
+ margin-left: 0;
+ padding-left: 0 !important;
+ border: none;
+}
+
+.log-lg-7, .col-lg-7 {
+    width: 80%;
+   min-width: 300px;
+}
+.paragraphs {
+    display: block;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 80%;
+}
+.csRunDiv  { 
+   padding-top: 3px;
+   border: none !important;
+   background-color: rgb(21, 21, 21) !important;
+   border-radius: 0 !important;
+   border-bottom: 3px solid darkorange !important;
+   margin: 3px;
+   color: white;
+}
+
+.csRunCode {
+    background-color: rgb(21, 21, 21) !important;
+}
+
+
+
+code {
+    filter: grayscale(.8) !important;
+}
+
+.paragraphs .par .parContent pre {
+    background-color: transparent;
+    color:  rgb(200,200,200);
+}
+
+.ace_cursor {
+    background-color:  rgb(200,200,200);;
+}
+
+.paragraphs .csRunDiv h4 {
+   background-color: transparent;
+}
+
+.tim-menu-placeholder {
+    background-color:  rgb(40, 40, 40);
+}
+
+.tim-menu {
+    background-color:  rgb(40, 40, 40) !important;
+    color: lightgray !important;
+    
+}
+
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control  {
+    background-color: transparent;
+    color: rgb(230,230,230);
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Prettier scrollbar,
+stolen from stack overflow */
+::-webkit-scrollbar {width: 0.5em;}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(100,100,100, 0.8);
+}
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(100, 100, 100, 0.4);
+}
+
+/*Green/red demo progress bar colors are set in js,
+so we can only lower the saturation with filters*/
+.par.fieldCell.preamble {
+    background: transparent !important;
+    filter: saturate(.3) !important;
+    border-color: red !important;
+}
+p.stem {
+    color: white;
+    background-color: transparent !important;
+}
+numericfield-runner {
+    border-color: transparent !important;
+}
+
+h1,h2,h3 {
+    padding-left: 30px !important;
+}
+
+/* ??? */
+.csTinyText {
+    background-color: rgb(60, 60, 60);
+    border-style: none;
+    border-radius: 2px;
+}
+
+/* Div for embedded videos*/
+div.smallVideoRunDiv {
+    background-color: rgb(40,40,40) !important;
+}
+
+/*Dark theme for ace code editor*/
+div.ace_gutter, div.ace_gutter-cell {
+    color: white !important;
+    background-color: transparent !important;
+}
+.ace_editor {
+    border-style: none !important;
+}
+
+/* Custom syntax highlight*/
+.ace_support.ace_function, .ace_keywrd {
+    color: darkorange !important;
+}
+.ace_identifier {color: white;}
+.ace_comment {color: gray !important;}
+.ace_constant {color: white !important;}
+
+/* Code editor cursor (loaded as base64 image)*/
+.ace_indent-guide {opacity: 0.2;}
+
+/* Scrollbar only shown when mouse is hoverint on code
+editor */
+.ace_editor:hover .ace_scrollbar-v {
+    display: block !important;
+}
+.ace_scrollbar-h, .ace_scrollbar-v {
+    display: none !important;
+}
+/* Print margin (removed for aesthetics */
+.ace_print-margin {
+    visibility: hidden !important;
+}
+
+/* ??? */
+.ace_fold {
+    background-color: darkorange !important;
+}
+
+/* Code editor buttons (Run/test etc) */
+p.csRunMenu button {
+   background-color: rgb(60,60,60) !important;
+   font-weight: bold !important;
+   font-size: 12px !important;
+}
+
+
+/*Draggable window top bar*/
+.draghandle.drag {
+    background-color: #1c1c1c !important;
+}
+/*Draggable window container div*/
+.draggable-content.modal-content  {
+    background-color: rgb(40,40,40) !important;
+}
+
+.timButton:hover {background-color: gray;}
+
+
+/* Notes / comments on right side of window */
+.note {background-color: rgb(40, 40, 40);}
+.answer {color: gray !important;}
+/* ??? */
+div.notes > div /*> p:nth-child(10)*/ > span {
+    color: darkorange;
+}
+
+/* Vasemmanpuolinen vertikaali sivutäppä */
+.paragraphs .csRunChanged {
+    background-color: orange !important;
+    border-style: solid !important;
+    
+    border-color: rgb(80,80,80) !important;
+    border-right: 0;
+}
+
+/*Paragraph selection highlight (when clicked on paragraph) */
+.par.lightselect {
+    background-color: darkgray !important;
+}
+
+/* Non-editable(??) code fields */
+.paragraphs pre {
+    background: gray;
+    border: none;
+    border-left: 4px solid gray;
+    border-radius: 0;
+    overflow: visible;
+}
+
+/* Turha? */
+.par>.headerlink:visited {
+    color: gray !important;
+    background-color: gray !important;
+    border-color: gray !important;
+}
+
+/* Oikeanpuolinen täppä */
+.par .readline {
+    right: 0px;
+    border-right: 3px solid gray;
+    border-color: gray !important;
+    
+}
+/*
+div.readline.hover.screen:hover {
+    background-color: rgb(40,40,40,0.5) !important;
+}*/
+
+/* Paragraph, for some weird reason the text starts outside the div so I addad little padding*/
+.par {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 5px;
+    padding-right: 7px;
+}
+
+/* Bootstrap menu icons */
+.glyphicon {
+    color: gray !important;
+}
+/*#menuTabs>.nav-tabs .glyphicon{
+    color: gray !important;
+}*/
+
+
+
+/* Dropdown list */
+select {
+    background-color: rgb(80, 80, 80) !important;
+    border-color: black !important;
+    color: lightgray !important;
+}
+
+
+
+cs-comtest-runner > div > p.unitTestGreen {
+    background-color: transparent !important;
+    color: white;
+}
+
+div.csRunCode > div > div.csRunNotSaved {
+    background-color: darkorange;
+}
+
+
+#noteBadge {
+    color: lightgray;
+    background-color: gray;
+}
+
+.paragraphs img:hover { filter: invert(0); }
+.paragraphs img, .paragraphs svg { filter: invert(.845); }
+
+/* Equations use img tags of svg tags, so we disable hovering for them */
+.mathp img:hover {
+    filter: invert(.845);
+}
+
+
+
+
+/* Navigation bar background */
+tim-header > div > ol {
+    background-color: rgb(40,40,40);
+    color: darkgray;
+}
+timmenu-runner > div > span.btn-group > a:visited {
+    color: darkgray !important;
+}
+
+.label-primary {
+    background-color: rgb(40,40,40) !important;
+    color: lightgray !important;
+    font-weight: normal;
+}
+
+/* The 1-5 goaltable usually found in front page of a course,
+colored with JavaScript so once again we have to filter the headache colors.
+WIP */
+.goaltable {
+    color: darkgray;
+   filter: saturate(0);
+}
+.goaltable tr.heading {
+    color: black !important;
+    background-color: black !important;
+}
+/* Text box heading */
+.panel-heading {
+    background-color: #1c1c1c !important;
+}
+
+/* One line input field*/
+input, .form-control {
+    background-color: rgb(60,60,60);
+    border-style: none;
+    color: darkgray;
+}
+
+/* Multi-line input field */
+textarea {
+    background-color: #1c1c1c !important;
+    color: lightgray !important;
+    border-style: none !important;
+    border-radius: 4 !important;
+}
+
+/* Remark inside a paragraph, should be noticeable */
+.paragraphs .huomautus {
+    background-color: rgb(20,20,20) !important;
+    border: solid 1px darkorange;
+}
+
+/* Alert, idk how differs from remark in practice*/
+div.alert {
+    border: 1px solid darkorange;
+    background-color: #1c1c1c;
+    color: darkgray;
+}
+
+/* The center navigation bar */
+.breadcrumb {
+    background-color: rgb(40,40,40);
+
+}
+.tim-menu-dropdown,
+.tim-menu-list-item {
+    background-color: #1c1c1c !important;
+    color: lightgray !important;
+}
+.tim-menu-list-item:hover {
+    background-color: rgb(40,40,40) !important;
+    color: white !important;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  filter: invert(.87);
+}
